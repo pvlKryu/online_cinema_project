@@ -1,0 +1,40 @@
+body{
+    background-color: #621402;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu {
+    list-style-type:none;
+    display: flex;
+    margin: 0;
+    margin-left: 17px;
+}
+.menu-item{
+    margin-right: 25px;
+}
+.menu-link {
+    color: white;
+    text-decoration: none;
+}
+.user{
+    margin-left: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: 11px;
+}
