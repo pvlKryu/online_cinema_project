@@ -1,181 +1,314 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 body {
-    background-color: #621402;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  background-color: #621402;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
-
 .container {
-    max-width: 1170px;
-    margin: auto;
+  max-width: 1170px;
+  margin: auto;
+  width: 90%;
 }
-
 .header {
-    min-height: 100vh;
-    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(/img/bg.jpg) no-repeat top / cover;
+  padding-bottom: 60px;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url("../img/bg.jpg") no-repeat center top / cover;
+}
+.m-menu {
+  display: none;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
+.nav {
+  position: relative;
+}
 .menu {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    margin-left: 17px;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-left: 17px;
 }
-
 .menu-item {
-    margin-right: 25px;
+  margin-right: 25px;
 }
-
 .menu-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-
 .user {
-    margin-left: auto;
-    color: white;
-    display: flex;
-    align-items: center;
+  margin-left: auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
-
 .avatar {
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    margin-left: 11px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-left: 11px;
 }
-
 .film {
-    margin-top: 60px;
-    color: white;
-    display: flex;
-    align-items: center;
+  margin-top: 60px;
+  color: #fff;
 }
-
 .film-title-small {
-    opacity: 0.5;
-    font-size: 24px;
-    line-height: 150%;
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
 }
-
 .film-title {
-    font-size: 36px;
-    line-height: 42px;
-    margin-top: 11px;
-    margin-bottom: 23px;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
 }
-
-.film-discription {
-    font-size: 16px;
-    line-height: 150%;
-    max-width: 560px;
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
 }
-
+.film {
+  display: flex;
+  align-items: center;
+}
 .film-trailer {
-    margin: auto;
+  margin: auto;
 }
-
 .film-details {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
 }
-
 .time {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 .time-icon {
-    margin-right: 14px;
+  margin-right: 14px;
 }
-
-.raiting {
-    display: flex;
-    align-items: center;
-    margin-left: 34px;
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
 }
-
-.raiting-icon {
-    margin-right: 14px;
+.rating-icon {
+  margin-right: 14px;
 }
-
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
 .session {
-    margin-top: 62px;
-    padding-top: 46px;
-    padding-bottom: 63px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  margin-top: 62px;
+  padding-top: 46px;
+  padding-bottom: 63px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
-.session-date-block {
-    display: flex;
-}
-
 .session-label {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
-
+.session-date-block {
+  display: flex;
+}
 .session-date-item {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    text-align: center;
-    width: 90px;
-    height: 90px;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    transition: background-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  transition: background-color 0.2s;
 }
-
 .session-month {
-    font-size: 16px;
-    line-height: 19px;
+  font-size: 16px;
+  line-height: 19px;
 }
-
 .session-day {
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 35px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
 }
-
 .session-week {
-    font-size: 19px;
-    line-height: 22px;
+  font-size: 19px;
+  line-height: 22px;
 }
-
 .session-date-item:hover {
-    background-color: #FE8E05;
-    color: #621402;
+  background-color: #fe8e05;
+  color: #621402;
 }
-
 .select {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 18px;
-    margin-top: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  padding: 18px;
+  cursor: pointer;
+  margin-top: 15px;
 }
-
 .select-cinema {
-    min-width: 470px;
+  width: 470px;
+}
+.scheme {
+  margin-bottom: 40px;
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+.scheme-svg {
+  max-width: 1170px;
+}
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.booked,
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+.scheme path.active,
+.scheme path.active:hover {
+  fill: #fe8e05;
+}
+.legend {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 1024px;
+  width: 90%;
+  margin: auto;
+  padding-top: 22px;
+  padding-bottom: 38px;
+}
+.legend-label {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.legend svg {
+  margin-right: 15px;
+}
+.price {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-label {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+}
+.price-tag {
+  font-size: 52px;
+  line-height: 61px;
+}
+.button {
+  display: block;
+  background: #fe8e05;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 24px 52px;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .select-cinema {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .session {
+    flex-wrap: wrap;
+  }
+  .session-date {
+    flex-basis: 70%;
+    margin-bottom: 40px;
+  }
+  .session-time {
+    order: 2;
+  }
+  .session-cinema {
+    order: 3;
+  }
+  .menu-item {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    padding: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    background-color: #621402;
+    z-index: 9;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .menu-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .m-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .film-description {
+    margin-right: 30px;
+  }
+  .film {
+    flex-direction: column;
+  }
+  .film-trailer {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
