@@ -3,6 +3,9 @@ Training project for the development of a website for an online cinema
 
 JS used for total price counting.
 
+Try here:
+https://pvlkryu.github.io/online_cinema_project/
+
 ## Outpoot examples <br>
 ### Main page:<br>
 ![image](https://user-images.githubusercontent.com/57821178/169635529-e38ab6b0-8330-4e5b-bb79-f16f8575d259.png)
